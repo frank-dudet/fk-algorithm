@@ -2,7 +2,16 @@ package org.frank;
 
 import java.util.Arrays;
 
+/**
+ * 动态规划-凑零钱问题
+ */
 public class Solution_322 {
+
+    public static void main(String[] args) {
+        int[] coins = new int[]{1, 2, 5};
+        int amount = 11;
+        System.out.println(new Solution_322().coinChange(coins, amount));
+    }
     public int coinChange(int[] coins, int amount) {
         if(amount == 0) {
             return 0;
